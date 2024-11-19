@@ -1,5 +1,3 @@
-artin_code
-
 #include <iostream>
 #include <vector>
 #include <bitset>
@@ -11,8 +9,8 @@ artin_code
 using namespace std;
 
 typedef long long ll;
-typedef pair pii;
-typedef vector vi;
+// typedef pair pii;
+// typedef vector vi;
 typedef long double ld;
 
 const ll N = 1e8 + 5;
@@ -204,7 +202,7 @@ inline ld get_six(ll a) {
     return A;
 }
 
-unordered_map f_vals; //A bit of caching, probably doesn't matter.
+unordered_map<ll, ld> f_vals; //A bit of caching, probably doesn't matter.
 ll HC = 1e9;
 
 ld get_dens(ll a, ll b) {
